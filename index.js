@@ -12,10 +12,13 @@ const inquirer = require("inquirer");
 // Array for team members
 const team = [];
 
-// Classes and links for individual team member files
-const { Manager, managerQuestionsArr } = require('./lib/Manager.js');
-const { Engineer, engineerQuestionsArr } = require('./lib/Engineer.js');
-const { Intern, internQuestionsArr } = require('./lib/Intern.js');
+const questions = [
+    {
+        type: "input",
+        name: "name",
+        message: "What is the name of this employee",
+    },
+]
 
 
 
